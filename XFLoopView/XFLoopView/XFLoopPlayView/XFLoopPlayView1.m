@@ -6,7 +6,7 @@
 //  Copyright © 2016年 lxf. All rights reserved.
 //
 
-#import "XFLoopPlayView.h"
+#import "XFLoopPlayView1.h"
 #import "XFCache.h"
 #import "UIImageView+setImage.h"
 
@@ -16,7 +16,7 @@
 #define kImageCount self.imageArr.count
 #define kIntervalTime 2.0f
 
-@interface XFLoopPlayView ()<UIScrollViewDelegate>
+@interface XFLoopPlayView1 ()<UIScrollViewDelegate>
 @property (nonatomic,assign) NSInteger index;
 @property (nonatomic ,strong) NSTimer *timer;
 /**
@@ -45,7 +45,7 @@
 
 @end
 
-@implementation XFLoopPlayView
+@implementation XFLoopPlayView1
 
 @synthesize intervalTime = _intervalTime;
 
@@ -93,9 +93,9 @@
 }
 
 - (void)createPageControl{
-    self.leftImageView.myImage = self.imageArr[kImageCount - 1];
-    self.centerImageView.myImage = self.imageArr[0];
-    self.rightImageView.myImage = self.imageArr[1];
+    self.leftImageView.image = self.imageArr[kImageCount - 1];
+    self.centerImageView.image = self.imageArr[0];
+    self.rightImageView.image = self.imageArr[1];
     if (!self.pageControl) {
         [self.pageControl removeFromSuperview];
     }
@@ -136,12 +136,12 @@
 
 - (void)myTapAction:(UITapGestureRecognizer *)tap{
     if (!self.imageUrlArr) {
-        self.block(self.centerImageView.myImage,nil);
+        self.block(self.centerImageView.image,nil);
     }else{
 //        NSString *imageStr = [NSString stringWithFormat:@"%@",self.centerImageView.image];
         
         for (NSString *url in self.imageAndUrlDic.allKeys) {
-            if (self.centerImageView.myImage == self.imageAndUrlDic[url]) {
+            if (self.centerImageView.image == self.imageAndUrlDic[url]) {
                 self.block(nil,url);
                 return;
             }
@@ -264,6 +264,33 @@
                 NSLog(@"%@---->failUrl%@",error,self.failUrl);
             }
 
+            /*
+            NSURLSessionDataTask *tast = [session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+                if (!error) {
+                    UIImage *image = [UIImage imageWithData:data];
+                    if (image) {
+                        [self.imageAndUrlDic setObject:[NSString stringWithFormat:@"%@",url] forKey:[NSString stringWithFormat:@"%@",image]];
+                        [arr addObject:image];
+//                        if (arr.count == self.imageUrlArr.count) {
+//                            dispatch_async(dispatch_get_main_queue(), ^{
+//                                self.imageArr = arr;
+//                            });
+//                        }
+                    }else{
+                        [self.failUrl addObject:url];
+                        NSLog(@"%@---->failUrl%@",error,self.failUrl);
+                    }
+                    
+                }else{
+                    [self.failUrl addObject:url];
+                    NSLog(@"%@---->failUrl%@",error,self.failUrl);
+                }
+                
+                
+            }];
+            
+            [tast resume];
+            */
         });
     }
     dispatch_group_notify(downLoadGroup, dispatch_get_main_queue(), ^{
@@ -309,9 +336,9 @@
         
         
         
-        self.leftImageView.myImage = self.imageArr[self.index % kImageCount];
-        self.centerImageView.myImage = self.imageArr[(self.index + 1) % kImageCount];
-        self.rightImageView.myImage = self.imageArr[(self.index + 2) % kImageCount];
+        self.leftImageView.image = self.imageArr[self.index % kImageCount];
+        self.centerImageView.image = self.imageArr[(self.index + 1) % kImageCount];
+        self.rightImageView.image = self.imageArr[(self.index + 2) % kImageCount];
         
      
         self.index = (self.index + 1) % kImageCount;
@@ -326,15 +353,15 @@
         CGFloat offx = self.scrollView.contentOffset.x;
         if (offx  > kWidth) {
             
-            self.leftImageView.myImage = self.imageArr[self.index % kImageCount];
-            self.centerImageView.myImage = self.imageArr[(self.index + 1) % kImageCount];
-            self.rightImageView.myImage = self.imageArr[(self.index + 2) % kImageCount];
+            self.leftImageView.image = self.imageArr[self.index % kImageCount];
+            self.centerImageView.image = self.imageArr[(self.index + 1) % kImageCount];
+            self.rightImageView.image = self.imageArr[(self.index + 2) % kImageCount];
             self.index = (self.index + 1) % kImageCount;
         }
         if (offx < kWidth) {
-            self.leftImageView.myImage = self.imageArr[(self.index + kImageCount - 2) % kImageCount];
-            self.centerImageView.myImage = self.imageArr[(self.index + kImageCount - 1) % kImageCount];
-            self.rightImageView.myImage = self.imageArr[self.index];
+            self.leftImageView.image = self.imageArr[(self.index + kImageCount - 2) % kImageCount];
+            self.centerImageView.image = self.imageArr[(self.index + kImageCount - 1) % kImageCount];
+            self.rightImageView.image = self.imageArr[self.index];
             
             self.index = (self.index + kImageCount - 1) % kImageCount;
             

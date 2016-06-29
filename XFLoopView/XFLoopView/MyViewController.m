@@ -27,15 +27,16 @@
                      @"http://cdn.duitang.com/uploads/item/201304/20/20130420192413_TeRRP.thumb.700_0.jpeg"];
     self.loopPlayView = [[XFLoopPlayView alloc]initWithFrame:CGRectMake(20, 100, 335, 200)];
     [self.view addSubview:self.loopPlayView];
-//    self.loopPlayView.imageArr = self.imageArr;
-    self.loopPlayView.imageUrlArr = urlArr;
+    self.loopPlayView.imageArr = urlArr;
+////    self.loopPlayView.imageArr = self.imageArr;
+//    self.loopPlayView.imageUrlArr = urlArr;
     self.loopPlayView.intervalTime = 2.0;
     [self.loopPlayView start];
-    [self.loopPlayView tapAction:^(UIImage *image,NSString *urlStr) {
-        NSLog(@"%@",image);
-        NSLog(@"%@",urlStr);
-        
-    }];
+//    [self.loopPlayView tapAction:^(UIImage *image,NSString *urlStr) {
+//        NSLog(@"%@",image);
+//        NSLog(@"%@",urlStr);
+//        
+//    }];
     
     
 }

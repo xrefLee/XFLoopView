@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B813608C6D52293BE79F651 /* libPods-XFLoopView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BC8A4237A9CA16440DF357 /* libPods-XFLoopView.a */; };
+		FD1984481D20F18300A00CC1 /* UIImageView+setImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1984471D20F18300A00CC1 /* UIImageView+setImage.m */; };
+		FD1984561D20F6DB00A00CC1 /* XFLoopPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1984531D20F6DB00A00CC1 /* XFLoopPlayView.m */; };
+		FD1984571D20F6DB00A00CC1 /* XFLoopPlayView1.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1984551D20F6DB00A00CC1 /* XFLoopPlayView1.m */; };
 		FD30CD931D13D69500EDB68D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD30CD921D13D69500EDB68D /* main.m */; };
 		FD30CD961D13D69500EDB68D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD30CD951D13D69500EDB68D /* AppDelegate.m */; };
 		FD30CD9C1D13D69500EDB68D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD30CD9A1D13D69500EDB68D /* Main.storyboard */; };
 		FD30CD9E1D13D69500EDB68D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD30CD9D1D13D69500EDB68D /* Assets.xcassets */; };
 		FD30CDA11D13D69500EDB68D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD30CD9F1D13D69500EDB68D /* LaunchScreen.storyboard */; };
 		FD30CDAA1D13D6FB00EDB68D /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD30CDA91D13D6FB00EDB68D /* MyViewController.m */; };
-		FD30CDB11D13D74400EDB68D /* XFLoopPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD30CDB01D13D74400EDB68D /* XFLoopPlayView.m */; };
 		FD30CDB61D13D7AD00EDB68D /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD30CDB21D13D7AD00EDB68D /* 1.jpg */; };
 		FD30CDB71D13D7AD00EDB68D /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD30CDB31D13D7AD00EDB68D /* 2.jpg */; };
 		FD30CDB81D13D7AD00EDB68D /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD30CDB41D13D7AD00EDB68D /* 3.jpg */; };
@@ -22,6 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56BC8A4237A9CA16440DF357 /* libPods-XFLoopView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XFLoopView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1268ABC12CE8EBA3311C367 /* Pods-XFLoopView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XFLoopView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XFLoopView/Pods-XFLoopView.debug.xcconfig"; sourceTree = "<group>"; };
+		BF4468ABAE2397E742CA4AE4 /* Pods-XFLoopView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XFLoopView.release.xcconfig"; path = "Pods/Target Support Files/Pods-XFLoopView/Pods-XFLoopView.release.xcconfig"; sourceTree = "<group>"; };
+		FD1984461D20F18300A00CC1 /* UIImageView+setImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+setImage.h"; sourceTree = "<group>"; };
+		FD1984471D20F18300A00CC1 /* UIImageView+setImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+setImage.m"; sourceTree = "<group>"; };
+		FD1984521D20F6DB00A00CC1 /* XFLoopPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFLoopPlayView.h; sourceTree = "<group>"; };
+		FD1984531D20F6DB00A00CC1 /* XFLoopPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFLoopPlayView.m; sourceTree = "<group>"; };
+		FD1984541D20F6DB00A00CC1 /* XFLoopPlayView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFLoopPlayView1.h; sourceTree = "<group>"; };
+		FD1984551D20F6DB00A00CC1 /* XFLoopPlayView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFLoopPlayView1.m; sourceTree = "<group>"; };
 		FD30CD8E1D13D69500EDB68D /* XFLoopView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XFLoopView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD30CD921D13D69500EDB68D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FD30CD941D13D69500EDB68D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,8 +44,6 @@
 		FD30CDA21D13D69500EDB68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD30CDA81D13D6FB00EDB68D /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		FD30CDA91D13D6FB00EDB68D /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
-		FD30CDAF1D13D74400EDB68D /* XFLoopPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFLoopPlayView.h; sourceTree = "<group>"; };
-		FD30CDB01D13D74400EDB68D /* XFLoopPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFLoopPlayView.m; sourceTree = "<group>"; };
 		FD30CDB21D13D7AD00EDB68D /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		FD30CDB31D13D7AD00EDB68D /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		FD30CDB41D13D7AD00EDB68D /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
@@ -47,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B813608C6D52293BE79F651 /* libPods-XFLoopView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,8 +67,18 @@
 		1E63B5A47F1BFB4688175907 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				56BC8A4237A9CA16440DF357 /* libPods-XFLoopView.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		647D570ED377E1D207B74EEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1268ABC12CE8EBA3311C367 /* Pods-XFLoopView.debug.xcconfig */,
+				BF4468ABAE2397E742CA4AE4 /* Pods-XFLoopView.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		FD30CD851D13D69500EDB68D = {
@@ -66,6 +87,7 @@
 				FD30CD901D13D69500EDB68D /* XFLoopView */,
 				FD30CD8F1D13D69500EDB68D /* Products */,
 				1E63B5A47F1BFB4688175907 /* Frameworks */,
+				647D570ED377E1D207B74EEF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,10 +131,14 @@
 		FD30CDAE1D13D74400EDB68D /* XFLoopPlayView */ = {
 			isa = PBXGroup;
 			children = (
-				FD30CDAF1D13D74400EDB68D /* XFLoopPlayView.h */,
-				FD30CDB01D13D74400EDB68D /* XFLoopPlayView.m */,
+				FD1984521D20F6DB00A00CC1 /* XFLoopPlayView.h */,
+				FD1984531D20F6DB00A00CC1 /* XFLoopPlayView.m */,
+				FD1984541D20F6DB00A00CC1 /* XFLoopPlayView1.h */,
+				FD1984551D20F6DB00A00CC1 /* XFLoopPlayView1.m */,
 				FD58E03B1D1BDE4D001233C5 /* XFCache.h */,
 				FD58E03C1D1BDE4D001233C5 /* XFCache.m */,
+				FD1984461D20F18300A00CC1 /* UIImageView+setImage.h */,
+				FD1984471D20F18300A00CC1 /* UIImageView+setImage.m */,
 			);
 			path = XFLoopPlayView;
 			sourceTree = "<group>";
@@ -124,9 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD30CDA51D13D69500EDB68D /* Build configuration list for PBXNativeTarget "XFLoopView" */;
 			buildPhases = (
+				208B1E2DC6801B8F73471547 /* [CP] Check Pods Manifest.lock */,
 				FD30CD8A1D13D69500EDB68D /* Sources */,
 				FD30CD8B1D13D69500EDB68D /* Frameworks */,
 				FD30CD8C1D13D69500EDB68D /* Resources */,
+				386914A9AA0194084E5F822D /* [CP] Embed Pods Frameworks */,
+				F15016BEA396A75ACB3510A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,12 +216,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		208B1E2DC6801B8F73471547 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		386914A9AA0194084E5F822D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XFLoopView/Pods-XFLoopView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F15016BEA396A75ACB3510A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XFLoopView/Pods-XFLoopView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FD30CD8A1D13D69500EDB68D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD30CDB11D13D74400EDB68D /* XFLoopPlayView.m in Sources */,
+				FD1984571D20F6DB00A00CC1 /* XFLoopPlayView1.m in Sources */,
+				FD1984561D20F6DB00A00CC1 /* XFLoopPlayView.m in Sources */,
+				FD1984481D20F18300A00CC1 /* UIImageView+setImage.m in Sources */,
 				FD30CD961D13D69500EDB68D /* AppDelegate.m in Sources */,
 				FD58E03D1D1BDE4D001233C5 /* XFCache.m in Sources */,
 				FD30CDAA1D13D6FB00EDB68D /* MyViewController.m in Sources */,
@@ -308,6 +387,7 @@
 		};
 		FD30CDA61D13D69500EDB68D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1268ABC12CE8EBA3311C367 /* Pods-XFLoopView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XFLoopView/Info.plist;
@@ -319,6 +399,7 @@
 		};
 		FD30CDA71D13D69500EDB68D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF4468ABAE2397E742CA4AE4 /* Pods-XFLoopView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XFLoopView/Info.plist;
