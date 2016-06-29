@@ -29,14 +29,13 @@
     [self.view addSubview:self.loopPlayView];
     self.loopPlayView.imageArr = urlArr;
 ////    self.loopPlayView.imageArr = self.imageArr;
-//    self.loopPlayView.imageUrlArr = urlArr;
     self.loopPlayView.intervalTime = 2.0;
     [self.loopPlayView start];
-//    [self.loopPlayView tapAction:^(UIImage *image,NSString *urlStr) {
-//        NSLog(@"%@",image);
-//        NSLog(@"%@",urlStr);
-//        
-//    }];
+    [self.loopPlayView tapAction:^(UIImage *image,NSString *urlStr) {
+        NSLog(@"%@",image);
+        NSLog(@"%@",urlStr);
+        
+    }];
     
     
 }
